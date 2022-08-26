@@ -7,7 +7,7 @@ export default function Modal() {
 
     const fetchQuote = async () => {
         try {
-            const response = await fetch(`https://api.adviceslip.com/advice`, {
+            const response = await fetch("https://api.adviceslip.com/advice", {
                 method: "GET",
                 headers: { Accept: "application/json" },
             });
