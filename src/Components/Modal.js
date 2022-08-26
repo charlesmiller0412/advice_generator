@@ -27,7 +27,7 @@ export default function Modal() {
 
     return (
         <div className="Modal">
-            <div className="Modal__advice">Advice # {quote.id}</div>
+            <div className="Modal__advice">Advice #{quote.id}</div>
             <div className="Modal__quote">"{quote.advice}"</div>
             <Divider />
             <div className="Modal__button" onClick={fetchQuote}>
