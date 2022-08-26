@@ -9,6 +9,7 @@ export default function Modal() {
         try {
             const response = await fetch("https://api.adviceslip.com/advice", {
                 method: "GET",
+                cache: "no-cache",
                 headers: { Accept: "application/json" },
             });
             const quote = await response.json();
