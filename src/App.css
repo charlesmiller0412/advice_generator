@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+h1 {
+    display: none;
+}
+
 .App {
     background: hsl(218, 23%, 16%);
     width: 100vw;
