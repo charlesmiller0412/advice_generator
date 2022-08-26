@@ -5,7 +5,7 @@
 }
 
 .App {
-    background: hsl(217, 19%, 24%);
+    background: hsl(218, 23%, 16%);
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -17,7 +17,7 @@
 }
 
 .Modal {
-    background: hsl(217, 19%, 38%);
+    background: hsl(217, 19%, 24%);
     min-height: fit-content;
     width: 90%;
     border-radius: 10px;
@@ -34,7 +34,7 @@
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    padding: 1.5rem;
+    padding: 2rem;
     display: grid;
     place-items: center;
 }
@@ -42,33 +42,28 @@
     color: hsl(193, 38%, 86%);
     font-weight: 800;
     height: fit-content;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
 }
-
 .Modal__divider {
-    padding: 2rem 1rem 4rem 1rem;
+    padding: 2rem 0 4.5rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
-.Modal__divider hr {
-    width: 37%;
-    border: none;
-    border-bottom: 1px solid hsl(193, 38%, 86%);
-    position: absolute;
-    right: 5%;
-}
+
 .Modal__divider hr:first-of-type {
     left: 5%;
 }
 .Modal__dividerMobile {
     display: flex;
-    width: fit-content;
+    width: 90%;
 }
 .Modal__dividerDesktop {
     display: none;
+    width: 90%;
 }
 .Modal__button {
     cursor: pointer;
@@ -110,7 +105,7 @@
 
 @media screen and (min-width: 550px) {
     .Modal {
-        width: 30%;
+        width: 45%;
         min-width: 18rem;
     }
     .Modal__button {

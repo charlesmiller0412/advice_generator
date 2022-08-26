@@ -4,7 +4,6 @@ import DividerDesktop from "../assets/pattern-divider-desktop.svg";
 export default function Divider() {
     return (
         <div className="Modal__divider">
-            <hr />
             <img
                 src={DividerMobile}
                 alt="divider"
@@ -15,7 +14,6 @@ export default function Divider() {
                 alt="divider"
                 className="Modal__dividerDesktop"
             />
-            <hr />
         </div>
     );
 }
