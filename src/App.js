@@ -2,9 +2,9 @@ import "./App.css";
 import Modal from "./Components/Modal";
 function App() {
     return (
-        <div className="App">
+        <main className="App">
             <Modal />
-        </div>
+        </main>
     );
 }
 
