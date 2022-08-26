@@ -2,7 +2,124 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "VT323", monospace;
+}
+
+.App {
+    background: hsl(217, 19%, 24%);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
     font-weight: 800;
     font-size: 28px;
+}
+
+.Modal {
+    background: hsl(217, 19%, 38%);
+    min-height: fit-content;
+    width: 90%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0.5rem 1.5rem hsl(218, 23%, 16%);
+}
+
+.Modal__advice {
+    color: hsl(150, 100%, 66%);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 1.5rem;
+    display: grid;
+    place-items: center;
+}
+.Modal__quote {
+    color: hsl(193, 38%, 86%);
+    font-weight: 800;
+    height: fit-content;
+    padding: 0 0.5rem;
+}
+
+.Modal__divider {
+    padding: 2rem 1rem 4rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.Modal__divider hr {
+    width: 37%;
+    border: none;
+    border-bottom: 1px solid hsl(193, 38%, 86%);
+    position: absolute;
+    right: 5%;
+}
+.Modal__divider hr:first-of-type {
+    left: 5%;
+}
+.Modal__dividerMobile {
+    display: flex;
+    width: fit-content;
+}
+.Modal__dividerDesktop {
+    display: none;
+}
+.Modal__button {
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: hsl(150, 100%, 66%);
+    margin: 0 auto;
+    margin-bottom: -2rem;
+    padding: 20px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    display: grid;
+    place-items: center;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.Modal__button:hover {
+    box-shadow: 0 0 1rem hsl(150, 100%, 66%);
+}
+
+.Modal__button:active {
+    box-shadow: 0 0 0.4rem hsl(150, 100%, 66%);
+}
+
+@media screen and (min-width: 550px) {
+    .Modal {
+        width: 30%;
+        min-width: 18rem;
+    }
+    .Modal__button {
+        margin-bottom: -2rem;
+    }
+    .Modal__dividerDesktop {
+        display: flex;
+    }
+    .Modal__dividerMobile {
+        display: none;
+    }
 }
