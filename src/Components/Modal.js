@@ -27,7 +27,6 @@ export default function Modal() {
 
     return (
         <div className="Modal">
-            <h1>Charles Miller - advice generator</h1>
             <div className="Modal__advice">Advice # {quote.id}</div>
             <div className="Modal__quote">"{quote.advice}"</div>
             <Divider />
